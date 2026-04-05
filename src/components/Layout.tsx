@@ -125,7 +125,7 @@ export function Layout() {
         <div className="max-w-[1200px] mx-auto flex flex-col items-center gap-4">
           <div className="flex gap-6 flex-wrap justify-center">
             {[
-              { icon: Phone, text: '(61) 9843-7570' },
+              { icon: Phone, text: '(61) 99843-7570' },
               { icon: Mail, text: 'felipepontes909@gmail.com' },
               { icon: MapPin, text: 'Brasília – DF' },
             ].map(({ icon: Icon, text }) => (
