@@ -82,7 +82,7 @@ export function Layout() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.22, ease: 'easeInOut' }}
-              className="bg-background/98 overflow-hidden"
+              className="bg-background overflow-hidden"
               style={{ borderTop: '1px solid hsl(348 70% 45% / 0.2)' }}
             >
               <div className="p-5 flex flex-col gap-4">
