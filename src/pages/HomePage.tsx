@@ -84,26 +84,27 @@ const SKILLS = [
   'Pensamento analítico',
 ];
 
-// Competências (antigo "Ferramentas & Tecnologias" renomeado)
+// Competências — habilidades técnicas complementares
+// Para editar, adicione/remova strings do array
 const COMPETENCIAS = [
-  'Zabbix · Grafana · The Dude',
-  'FortiGate · FortiAnalyzer · Check Point',
-  'Winbox (MikroTik) · SmartOLT',
-  'ServiceNow · Hubsoft',
-  'Proxmox · VMware · Docker · Podman',
-  'AWS CloudWatch · Azure Monitor',
-  'Bash Scripting · SSH · PuTTY',
+  'Gestão de vulnerabilidades',
+  'Hardening de sistemas',
+  'Análise de logs e SIEM',
+  'Políticas de segurança e compliance',
+  'Documentação técnica',
+  'Automação de processos (scripting)',
 ];
 
-// Ferramentas & Tecnologias — novo bloco separado abaixo
-const FERRAMENTAS = [
-  'Zabbix · Grafana · The Dude',
-  'FortiGate · FortiAnalyzer · Check Point',
-  'Winbox (MikroTik) · SmartOLT',
-  'ServiceNow · Hubsoft',
-  'Proxmox · VMware · Docker · Podman',
-  'AWS CloudWatch · Azure Monitor',
-  'Bash Scripting · SSH · PuTTY',
+// Ferramentas & Tecnologias — agrupadas por área de atuação
+// Cada objeto tem "area" (título do grupo) e "tools" (lista de ferramentas)
+const FERRAMENTAS: { area: string; tools: string[] }[] = [
+  { area: 'Monitoramento', tools: ['Zabbix', 'Grafana', 'The Dude'] },
+  { area: 'Segurança / Firewall', tools: ['FortiGate', 'FortiAnalyzer', 'Check Point'] },
+  { area: 'Redes & Telecom', tools: ['Winbox (MikroTik)', 'SmartOLT', 'Huawei', 'TP-Link'] },
+  { area: 'Virtualização & Containers', tools: ['Proxmox', 'VMware', 'Docker', 'Podman'] },
+  { area: 'Cloud & Observabilidade', tools: ['AWS CloudWatch', 'Azure Monitor'] },
+  { area: 'Gestão & ITSM', tools: ['ServiceNow', 'Hubsoft'] },
+  { area: 'CLI & Automação', tools: ['Bash Scripting', 'SSH', 'PuTTY', 'Git'] },
 ];
 
 /* ── Animação ── */
