@@ -79,20 +79,20 @@ const SKILLS = [
   'Gestão e priorização de incidentes',
   'Administração de sistemas Linux',
   'Implementação e análise de segurança em redes',
-  'Comunicação técnica',
-  'Trabalho em equipe',
-  'Pensamento analítico',
+  'Análise de desempenho e disponibilidade de redes',
+  'Documentação técnica e registro de incidentes',
 ];
 
 // Competências — habilidades técnicas complementares
 // Para editar, adicione/remova strings do array
 const COMPETENCIAS = [
+  'Segurança de redes e análise de incidentes',
   'Gestão de vulnerabilidades',
   'Hardening de sistemas',
-  'Análise de logs e SIEM',
+  'Análise de logs e eventos (SIEM)',
   'Políticas de segurança e compliance',
-  'Documentação técnica',
-  'Automação de processos (scripting)',
+  'Monitoramento de eventos de segurança (SIEM)',
+  'Infraestrutura virtualizada (Proxmox/VMware)',
 ];
 
 // Ferramentas & Tecnologias — agrupadas por área de atuação
@@ -253,7 +253,7 @@ export function HomePage() {
 
             <motion.div {...fadeUp(0.5)} className="flex gap-6 mt-10 flex-wrap">
               {[
-                { icon: Phone, label: '(61) 9843-7570', href: 'tel:+5561984370' },
+                { icon: Phone, label: '(61) 99843-7570', href: 'tel:+5561998437570' },
                 { icon: Mail, label: 'felipepontes909@gmail.com', href: 'mailto:felipepontes909@gmail.com' },
                 { icon: Linkedin, label: 'linkedin/pontes-090', href: 'https://www.linkedin.com/in/pontes-090' },
                 { icon: MapPin, label: 'Brasília – DF', href: undefined },
@@ -482,7 +482,7 @@ export function HomePage() {
               <div className="glass-card rounded-2xl p-6 h-full">
                 <h3 className="text-foreground font-bold text-[15px] mb-4 flex items-center gap-2">
                   <Wrench size={14} className="text-primary" />
-                  Competências
+                  Especialidades
                 </h3>
                 <div className="space-y-2.5">
                   {COMPETENCIAS.map(item => (
