@@ -1,6 +1,6 @@
-import ccisc2 from '@/assets/CC-ICS2.png'
+import ccisc2 from '@/assets/CC-ICS2.png';
 
-//import img from '@/assets/nome.jpg'
+//import img from '@/assets/nome.jpg;'
 
 export interface Certification {
   id: number;
