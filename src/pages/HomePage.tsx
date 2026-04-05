@@ -30,7 +30,7 @@ const EXPERIENCES = [
     company: 'Camon Telecom',
     period: 'Ago/2025 – Atualmente',
     /* Resumo curto exibido por padrão */
-    summary: 'Monitoramento e suporte à rede FTTH (GPON/SFP) com Zabbix, Grafana e The Dude. Suporte técnico N1/N2 a clientes corporativos.',
+    summary: 'Atuação em ambiente de telecom, com foco no monitoramento e suporte à rede FTTH (GPON/SFP), garantindo disponibilidade, segurança e desemp [...]',
     /* Descrição completa exibida ao expandir */
     full: 'Atuação em ambiente de telecom, com foco no monitoramento e suporte à rede FTTH (GPON/SFP), garantindo disponibilidade, segurança e desempenho. Experiência com Zabbix, Grafana e The Dude, realizando análise de eventos, incidentes, performance, verificação de firewalls. Suporte técnico N1/N2 a clientes corporativos, com diagnóstico e resolução de falhas e execução de configurações de rede. Vivência com equipamentos MikroTik, Huawei, TP-Link e Fortinet (FortiGate). Atuação em rotinas de backup, atualização de firmware e estabilidade dos ativos, além de participação em viabilidade técnica, visitas em campo e tratativa de falhas massivas (backbone/rompimentos), com acionamento de equipes. Apoio na administração do monitoramento, incluindo gestão de hosts via SNMPv2 no Zabbix.',
   },
@@ -38,14 +38,14 @@ const EXPERIENCES = [
     role: 'Suporte Técnico',
     company: 'Atividade Autônoma',
     period: 'Jul/2023 – Jul/2025',
-    summary: 'Manutenção de computadores e notebooks, configuração de redes, ajustes de roteadores e implementação de regras de firewall.',
+    summary: 'Atuação como suporte técnico autônomo, realizando manutenção de computadores e notebooks, formatação e recuperação de sistemas operacio [...]',
     full: 'Atuação como suporte técnico autônomo, realizando manutenção de computadores e notebooks, formatação e recuperação de sistemas operacionais, instalação e configuração de softwares e periféricos. Experiência com configuração de redes, ajustes de roteadores, implementação de regras básicas de firewall e segurança. Atuação também com diagnóstico e resolução de falhas, além de manutenção e configuração de servidores de pequeno a médio porte.',
   },
   {
     role: 'Assistente Técnico (Temporário)',
     company: 'ENNET',
     period: 'Jul/2021 – Ago/2021',
-    summary: 'Suporte técnico com foco em manutenção de computadores, instalação de sistemas operacionais e suporte a redes.',
+    summary: 'Atuação como suporte técnico temporário, prestando atendimento a usuários e equipes, com foco em manutenção de computadores, instalação e conf [...]',
     full: 'Atuação como suporte técnico temporário, prestando atendimento a usuários e equipes, com foco em manutenção de computadores, instalação e configuração de sistemas operacionais, suporte a redes e configuração de segurança básica. Responsável pelo diagnóstico e resolução de problemas, configuração de rede e firewall, além de suporte e manutenção em servidores de pequeno a médio porte.',
   },
 ];
@@ -66,7 +66,7 @@ const EDUCATION = [
 // Idiomas — adicionado Espanhol Intermediário
 const LANGUAGES = [
   { name: 'Português', level: 'Nativo', percent: 100 },
-  { name: 'Inglês', level: 'Avançado', percent: 85 },
+  { name: 'Inglês', level: 'Avançado', percent: 80 },
   { name: 'Espanhol', level: 'Intermediário', percent: 55 },
 ];
 
