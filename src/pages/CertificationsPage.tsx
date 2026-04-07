@@ -100,10 +100,14 @@ export function CertificationsPage() {
               }`}>
                 {/* Top: Badge + Info side by side */}
                 <div className="flex items-start gap-4 mb-4">
-                  {/* Badge image */}
-                  <div className="w-16 h-16 rounded-xl bg-primary/5 border border-primary/15 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  {/* Badge image - sem border/bg quando tem imagem */}
+                  <div className={`w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden ${
+                    cert.badgeImage 
+                      ? 'bg-transparent border-0' 
+                      : 'bg-primary/5 border border-primary/15'
+                  }`}>
                     {cert.badgeImage ? (
-                      <img src={cert.badgeImage} alt={cert.name} className="w-full h-full object-contain p-1" />
+                      <img src={cert.badgeImage} alt={cert.name} className="w-16 h-16 object-contain" />
                     ) : (
                       <Award size={24} className="text-primary/40" />
                     )}
