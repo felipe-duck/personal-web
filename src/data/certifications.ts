@@ -3,6 +3,7 @@ import fca_fortinet from '@/assets/FCA-Fortinet.png';
 import linux_ibsec from "@/assets/Linux-IBSEC.png";
 import soc_ibsec from "@/assets/SOC_IBSEC.png"
 import iso_sec_skillfront from "@/assets/Iso27001-skillfront.png"
+import iso_mgit_skillfront from "@/assets/Iso20000-skillfront.png"
 
 //import img from '@/assets/nome.jpg;'
 
@@ -68,7 +69,7 @@ export const CERTIFICATIONS: Certification[] = [
     status: 'Obtida',
     year: '2025',
     description: 'Gestão de serviços de TI conforme a norma ISO/IEC 20000, alinhada ao framework ITIL.',
-    badgeImage: '',
+    badgeImage: iso_mgit_skillfront,
   },
   {
     id: 6,
@@ -88,6 +89,16 @@ export const CERTIFICATIONS: Certification[] = [
     status: 'Em andamento',
     year: 'Em progresso',
     description: 'Framework global de gestão de serviços de TI, práticas de service management e melhoria contínua.',
+    badgeImage: '',
+  },
+  {
+    id: 8,
+    name: 'FCP - Security Operations',
+    issuer: 'Fortinet',
+    category: 'Segurança',
+    status: 'Interesse',
+    year: 'Em progresso',
+    description: 'Certificação de nível profissional focada em monitoramento, detecção e resposta a incidentes (SOC) utilizando as soluções de visibilidade e automação da Fortinet.',
     badgeImage: '',
   },
 ];
