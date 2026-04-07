@@ -38,11 +38,11 @@ export function LabDetailPage() {
           className="grid grid-cols-1 lg:grid-cols-2 gap-8"
         >
           {/* Image */}
-          <div className="rounded-2xl overflow-hidden border border-border bg-secondary">
+          <div className="rounded-2xl overflow-hidden border border-border bg-black/20">
             <img
               src={lab.detailImage}
               alt={lab.title}
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain block"
               width={1200}
               height={600}
             />
