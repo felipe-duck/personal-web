@@ -2,7 +2,7 @@ import ccisc2 from '@/assets/CC-ICS2.png';
 import fca_fortinet from '@/assets/FCA-Fortinet.png';
 import linux_ibsec from "@/assets/Linux-IBSEC.png";
 import soc_ibsec from "@/assets/SOC_IBSEC.png"
-
+import iso_sec_skillfront from "@/assets/Iso27001-skillfront.png"
 
 //import img from '@/assets/nome.jpg;'
 
@@ -38,7 +38,7 @@ export const CERTIFICATIONS: Certification[] = [
     status: 'Obtida',
     year: '2025',
     description: 'Fundamentos da norma ISO/IEC 27001 para Sistemas de Gestão de Segurança da Informação (SGSI).',
-    badgeImage: '',
+    badgeImage: iso_sec_skillfront,
   },
   {
     id: 3,
