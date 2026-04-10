@@ -73,7 +73,7 @@ export function LabsPage() {
                     <div className="p-5 flex-1 flex flex-col">
                       <div className="flex items-center gap-1.5 text-muted-foreground text-[11px] mb-2">
                         <Clock size={11} /> {lab.duration} 
-                        <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full border ${DIFFICULTY_STYLES[lab.difficulty] || ''}`}>
+                        <span className={`text-[11px] font-semibold px-2.5 py-1 left-4 rounded-full border ${DIFFICULTY_STYLES[lab.difficulty] || ''}`}>
                           {lab.difficulty}
                         </span>
                       </div>
