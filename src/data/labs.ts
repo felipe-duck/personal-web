@@ -49,7 +49,7 @@ export const LABS: Lab[] = [
     outcome: '[Descreva o resultado obtido ao final do laboratório e o que foi aprendido]',
     repoLink: '',
     // notes: preencha com o resumo livre do laboratório. Deixe '' para ocultar a seção.
-    notes: '[Escreva aqui um resumo mais detalhado do laboratório em formato livre. Pode incluir contexto técnico, dificuldades encontradas, aprendizados, observações importantes, etc.]',
+    notes: 'Escreva aqui um resumo mais detalhado do laboratório em formato livre. Pode incluir contexto técnico, dificuldades encontradas, aprendizados, observações importantes, etc.',
     // topologyDownload: URL ou caminho local do arquivo de topologia (imagem, .drawio, .pdf, etc.)
     // Exemplo: topologyDownload: '/downloads/lab-01-topologia.png',
     topologyDownload: '',
