@@ -4,9 +4,9 @@ import { FlaskConical, Clock, ArrowRight } from 'lucide-react';
 import { LABS } from '@/data/labs';
 
 const DIFFICULTY_STYLES: Record<string, string> = {
-  Iniciante: 'bg-green-500/90 border-green-500 text-white',
-  Intermediário: 'bg-yellow-500/90 border-yellow-500 text-white',
-  Avançado: 'bg-primary/90 border-primary text-white',
+  Iniciante: 'bg-green-500/10 border-green-500/30 text-green-400',
+  Intermediário: 'bg-yellow-500/10 border-yellow-500/30 text-yellow-400',
+  Avançado: 'bg-primary/10 border-primary/30 text-primary',
 };
 
 export function LabsPage() {
@@ -64,16 +64,17 @@ export function LabsPage() {
                         <span className="bg-primary/80 text-primary-foreground text-[10px] font-bold px-2.5 py-1 rounded-md">
                           LAB {String(i + 1).padStart(2, '0')}
                         </span>
-                        <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full border ${DIFFICULTY_STYLES[lab.difficulty] || ''}`}>
-                          {lab.difficulty}
-                        </span>
+                        {/* <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full border ${DIFFICULTY_STYLES[lab.difficulty] || ''}`}> 
+                        {lab.difficulty}
+                        </span>*/}
                       </div>
                     </div>
 
                     <div className="p-5 flex-1 flex flex-col">
                       <div className="flex items-center gap-1.5 text-muted-foreground text-[11px] mb-2">
-                        <Clock size={11} /> {lab.duration} 
-                        <span className={`text-[11px] font-semibold px-2.5 py-1 left-4 rounded-full border ${DIFFICULTY_STYLES[lab.difficulty] || ''}`}>
+                        <Clock size={11} /> 
+                        {lab.duration} 
+                        <span className={`ml-3 font-semibold px-2.5 py-1 rounded-full border ${DIFFICULTY_STYLES[lab.difficulty] || ''}`}>
                           {lab.difficulty}
                         </span>
                       </div>
