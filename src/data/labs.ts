@@ -28,7 +28,7 @@ export const LABS: Lab[] = [
     title: 'MikroLab',
     subtitle: 'Laboratório de redes com alta disponibilidade, segmentação por VLAN e testes de segurança utilizando MikroTik',
     description: 'Laboratório prático desenvolvido com foco em redes corporativas utilizando equipamentos MikroTik. O ambiente simula um cenário real com múltiplos links de internet, redundância de firewall, segmentação de rede e testes de segurança, permitindo validar conceitos como alta disponibilidade, VPNs e controle de tráfego.',
-    tags: ['Alta Disponibilidade (HA)', 'VRRP (Virtual Router Redundancy Protocol)', 'WireGuard', 'NAT e Firewall (Filter / Mangle)', 'VLAN (802.1Q)', 'Segmentação de Rede'],
+    tags: ['Alta Disponibilidade (HA)', 'VLAN (802.1Q)', 'WireGuard', 'Segmentação de Rede','NAT e Firewall (Filter / Mangle)', 'VRRP (Virtual Router Redundancy Protocol)'],
     category: 'MikroTik em Alta Disponibilidade (HA)',
     duration: '[5 horas / 23 dias]',
     difficulty: 'Intermediário',
