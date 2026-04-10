@@ -1,4 +1,4 @@
-import mikrolab01 from "@/assets/MikroLab.jpeg"
+import mikrolab01 from "@/assets/labs/MikroLab.jpeg"
 
 export interface Lab {
   id: string;
