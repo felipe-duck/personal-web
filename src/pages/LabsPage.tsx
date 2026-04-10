@@ -64,7 +64,7 @@ export function LabsPage() {
                         <span className="bg-primary/80 text-primary-foreground text-[10px] font-bold px-2.5 py-1 rounded-md">
                           LAB {String(i + 1).padStart(2, '0')}
                         </span>
-                        <span className={`text-[10px] font-semibold px-2.5 py-1 rounded-full border ${DIFFICULTY_STYLES[lab.difficulty] || ''}`}>
+                        <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full border ${DIFFICULTY_STYLES[lab.difficulty] || ''}`}>
                           {lab.difficulty}
                         </span>
                       </div>
