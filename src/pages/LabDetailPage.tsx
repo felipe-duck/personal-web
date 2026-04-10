@@ -121,7 +121,7 @@ export function LabDetailPage() {
             </div>
 
             <div className="glass-card rounded-2xl p-8">
-              <h3 className="text-lg font-bold text-foreground mb-4">Resultado</h3>
+              <h3 className="text-lg font-bold text-foreground mb-4">Resultado Esperado</h3>
               <p className="text-muted-foreground text-sm leading-7">{lab.outcome}</p>
             </div>
           </div>
@@ -183,7 +183,7 @@ export function LabDetailPage() {
             className="mt-8"
           >
             <div className="glass-card rounded-2xl p-8">
-              <h3 className="text-lg font-bold text-foreground mb-4">Resumo</h3>
+              <h3 className="text-lg font-bold text-foreground mb-4">Resumo Técnico</h3>
               {/* Renderizar lab.notes preservando quebras de linha com whitespace-pre-wrap */}
               <p className="text-muted-foreground text-sm leading-7 whitespace-pre-wrap">{lab.notes}</p>
             </div>
