@@ -64,14 +64,20 @@ export function ProjectsPage() {
                       </div>
                     </div>
 
-                    <div className="p-5 flex-1 flex flex-col">
+                    {/*<div className="p-5 flex-1 flex flex-col">
                       <div className="flex items-center gap-2 mb-2">
-                        {/*<div className="flex items-center gap-1.5 text-muted-foreground text-[11px] mb-2">*/}
+                        <div className="flex items-center gap-1.5 text-muted-foreground text-[11px] mb-2">
                           <Clock size={11} /> 
                           {project.year}
-                        {/*</div>*/}
-                      </div>
+                        </div>
+                      </div>*/}
 
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-muted-foreground/50 text-[11px]">
+                          {project.year}
+                        </span>
+                      </div>
+                      
                       <h3 className="text-foreground font-bold text-[15px] mb-1.5">{project.title}</h3>
                       <p className="text-muted-foreground text-[13px] mb-3 line-clamp-2">{project.description}</p>
 
