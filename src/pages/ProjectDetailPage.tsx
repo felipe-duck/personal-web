@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft, Github, Code2, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Github, Code2, CheckCircle2, Wrench, Target } from 'lucide-react';
 import { PROJECTS } from '@/data/projects';
 
 const STATUS_STYLES: Record<string, string> = {
@@ -83,14 +83,68 @@ export function ProjectDetailPage() {
           </div>
         </motion.div>
 
-        {/* Highlights */}
+        {/* Como Funciona + Ferramentas + Objetivo */}
+        {/* Mesma estrutura da página de laboratórios: howItWorks à esquerda, ferramentas e objetivo à direita */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8"
+        >
+          {/* Como Funciona */}
+          <div className="glass-card rounded-2xl p-8">
+            <h3 className="text-lg font-bold text-foreground mb-6 flex items-center gap-2">
+              <CheckCircle2 size={18} className="text-primary" /> Como Funciona
+            </h3>
+            <div className="space-y-4">
+              {/* Iterar sobre project.howItWorks — adicionar o campo na interface e no objeto */}
+              {project.howItWorks.map((step, i) => (
+                <div key={i} className="flex gap-4">
+                  <div className="w-7 h-7 rounded-full bg-primary/10 border border-primary/25 flex items-center justify-center flex-shrink-0 text-primary text-xs font-bold">
+                    {i + 1}
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-6 pt-0.5">{step}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            {/* Ferramentas */}
+            <div className="glass-card rounded-2xl p-8">
+              <h3 className="text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+                <Wrench size={18} className="text-primary" /> Ferramentas
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {/* Iterar sobre project.tools — adicionar o campo na interface e no objeto */}
+                {project.tools.map(tool => (
+                  <span key={tool} className="text-[12px] px-3 py-1.5 rounded-lg bg-secondary border border-border text-secondary-foreground font-medium">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Objetivo */}
+            <div className="glass-card rounded-2xl p-8">
+              <h3 className="text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+                <Target size={18} className="text-primary" /> Objetivo
+              </h3>
+              {/* Exibir project.objective — adicionar o campo na interface e no objeto */}
+              <p className="text-muted-foreground text-sm leading-7">{project.objective}</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Destaques */}
         {project.highlights.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mt-12"
+            className="mt-8"
           >
             <div className="glass-card rounded-2xl p-8">
               <h3 className="text-lg font-bold text-foreground mb-6 flex items-center gap-2">
@@ -106,6 +160,24 @@ export function ProjectDetailPage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </motion.div>
+        )}
+
+        {/* Resumo / Texto Bruto */}
+        {/* Exibir somente se project.notes estiver preenchido e não começar com '[' (placeholder) */}
+        {project.notes && !project.notes.startsWith('[') && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mt-8"
+          >
+            <div className="glass-card rounded-2xl p-8">
+              <h3 className="text-lg font-bold text-foreground mb-4">Resumo</h3>
+              {/* Renderizar project.notes preservando quebras de linha com whitespace-pre-wrap */}
+              <p className="text-muted-foreground text-sm leading-7 whitespace-pre-wrap">{project.notes}</p>
             </div>
           </motion.div>
         )}
