@@ -4,9 +4,9 @@ import { FlaskConical, Clock, ArrowRight } from 'lucide-react';
 import { LABS } from '@/data/labs';
 
 const DIFFICULTY_STYLES: Record<string, string> = {
-  Iniciante: 'bg-green-500/60 border-green-500 text-green-400',
-  Intermediário: 'bg-yellow-500/60 border-yellow-500 text-yellow-400',
-  Avançado: 'bg-primary/60 border-primary text-primary',
+  Iniciante: 'bg-green-500/80 border-green-500 text-transparent',
+  Intermediário: 'bg-yellow-500/80 border-yellow-500 text-transparent',
+  Avançado: 'bg-primary/80 border-primary text-transparent',
 };
 
 export function LabsPage() {
