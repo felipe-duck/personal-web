@@ -1,9 +1,9 @@
-import ccisc2 from '@/assets/CC-ICS2.png';
-import fca_fortinet from '@/assets/FCA-Fortinet.png';
-import linux_ibsec from "@/assets/Linux-IBSEC.png";
-import soc_ibsec from "@/assets/SOC_IBSEC.png"
-import iso_sec_skillfront from "@/assets/Iso27001-skillfront.png"
-import iso_mgit_skillfront from "@/assets/Iso20000-skillfront.png"
+import ccisc2 from '@/assets/certs/CC-ICS2.png';
+import fca_fortinet from '@/assets/certs/FCA-Fortinet.png';
+import linux_ibsec from "@/assets/certs/Linux-IBSEC.png";
+import soc_ibsec from "@/assets/certs/SOC_IBSEC.png"
+import iso_sec_skillfront from "@/assets/certs/Iso27001-skillfront.png"
+import iso_mgit_skillfront from "@/assets/certs/Iso20000-skillfront.png"
 
 //import img from '@/assets/nome.jpg;'
 
