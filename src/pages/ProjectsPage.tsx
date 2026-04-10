@@ -4,8 +4,8 @@ import { Code2, ArrowRight } from 'lucide-react';
 import { PROJECTS } from '@/data/projects';
 
 const STATUS_STYLES: Record<string, { badge: string; dot: string }> = {
-  'Concluído': { badge: 'bg-green-500/10 border-green-500/25 text-green-400', dot: 'bg-green-400 shadow-[0_0_6px_theme(colors.green.400)]' },
-  'Em andamento': { badge: 'bg-yellow-500/10 border-yellow-500/25 text-yellow-400', dot: 'bg-yellow-400 shadow-[0_0_6px_theme(colors.yellow.400)]' },
+  'Concluído': { badge: 'bg-muted/50 border-green-500/25 text-green-400', dot: 'bg-green-400 shadow-[0_0_6px_theme(colors.green.400)]' },
+  'Em andamento': { badge: 'bg-muted/50 border-yellow-500/25 text-yellow-400', dot: 'bg-yellow-400 shadow-[0_0_6px_theme(colors.yellow.400)]' },
   'Arquivado': { badge: 'bg-muted/50 border-border text-muted-foreground', dot: 'bg-muted-foreground' },
 };
 
@@ -66,10 +66,10 @@ export function ProjectsPage() {
 
                     <div className="p-5 flex-1 flex flex-col">
                       <div className="flex items-center gap-2 mb-2">
-                        <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                          <Code2 size={14} className="text-primary" />
+                        <div className="flex items-center gap-1.5 text-muted-foreground text-[11px] mb-2">
+                          <Clock size={11} /> 
+                          {project.year}
                         </div>
-                        <span className="text-muted-foreground/50 text-[11px]">{project.year}</span>
                       </div>
 
                       <h3 className="text-foreground font-bold text-[15px] mb-1.5">{project.title}</h3>
